@@ -44,8 +44,8 @@ class Config:
             self.ENCODER = config("ENCODER", default=None)
             self.EXT_CAP = config("EXTENDED_CAPTIONS", default=True, cast=bool)
             self.FBANNER = config("FBANNER", default=False, cast=bool)
-            self.FCHANNEL = config("FCHANNEL", default=0, cast=int)
-            self.FCHANNEL_STAT = config("FCHANNEL_STAT", default=0, cast=int)
+            self.FCHANNEL = config('FCHANNEL', default=0, cast=int)
+            self.FCHANNEL_STAT = config('FCHANNEL_STAT', default=0, cast=int)
             self.FCODEC = config("FCODEC", default=None)
             self.FFMPEG = config(
                 "FFMPEG",
