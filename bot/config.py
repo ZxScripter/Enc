@@ -32,7 +32,7 @@ class Config:
             self.BOT_TOKEN = config("BOT_TOKEN")
             self.CACHE_DL = config("CACHE_DL", default=False, cast=bool)
             self.CAP_DECO = config("CAP_DECO", default="◉")
-            self.C_LINK = config("C_LINK", default="@ANi_MiNE")
+            self.C_LINK = config("C_LINK", default="@Anime_Sensei_Network")
             self.CMD_SUFFIX = config("CMD_SUFFIX", default=str())
             self.DATABASE_URL = config("DATABASE_URL", default=None)
             self.DBNAME = config("DBNAME", default="ENC")
@@ -49,7 +49,7 @@ class Config:
             self.FCODEC = config("FCODEC", default=None)
             self.FFMPEG = config(
                 "FFMPEG",
-                default='ffmpeg -i "{}" -preset ultrafast -c:v libx265 -crf 27 -map 0:v -c:a aac -map 0:a -c:s copy -map 0:s? "{}"',
+                default='ffmpeg -i "{}" -preset veryfast -c:v libx264 -crf 28 -map 0:v -c:a aac -map 0:a -c:s copy -map 0:s? "{}"',
             )
             self.FL_CAP = config("FILENAME_AS_CAPTION", default=False, cast=bool)
             self.FS_THRESHOLD = config("FLOOD_SLEEP_THRESHOLD", default=600, cast=int)
@@ -69,7 +69,7 @@ class Config:
             self.RSS_CHAT = config("RSS_CHAT", default=0, cast=int)
             self.RSS_DELAY = config("RSS_DELAY", default=60, cast=int)
             self.RSS_DIRECT = config("RSS_DIRECT", default=True, cast=bool)
-            self.RELEASER = config("RELEASER", default="A-M|ANi-MiNE")
+            self.RELEASER = config("RELEASER", default="A-S|ANIME SENSEI")
             self.TELEGRAPH_API = config(
                 "TELEGRAPH_API", default="https://api.telegra.ph"
             )
